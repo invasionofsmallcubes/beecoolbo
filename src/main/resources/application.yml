@@ -1,10 +1,17 @@
 server:
     port: ${PORT:5000}
+#spring:
+#    datasource:
+#        hikari:
+#            connection-timeout: 30000
+#            maximum-pool-size: 10
+#        url: ${JDBC_DATABASE_URL:}
+#    profiles:
+#        active: production
+
 spring:
     datasource:
-        hikari:
-            connection-timeout: 30000
-            maximum-pool-size: 10
-        url: ${JDBC_DATABASE_URL:}
-    profiles:
-        active: production
+        driver-class-name: org.h2.Driver
+        password: ''
+        url: jdbc:h2:file:~/test
+        username: sa
