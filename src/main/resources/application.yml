@@ -13,5 +13,3 @@ spring:
             connection-timeout: 30000
             maximum-pool-size: 10
         url: ${JDBC_DATABASE_URL:}
-    profiles:
-        active: production
