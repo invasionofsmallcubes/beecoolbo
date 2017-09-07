@@ -1,6 +1,13 @@
 server:
     port: ${PORT:5000}
 spring:
+    data:
+        rest:
+            base-path: /api
+    jpa:
+        properties:
+            hibernate:
+                default_schema: beecoolbo
     datasource:
         hikari:
             connection-timeout: 30000
