@@ -8,6 +8,7 @@ spring:
         properties:
             hibernate:
                 default_schema: beecoolbo
+                dialect: org.hibernate.dialect.PostgreSQLDialect
     datasource:
         hikari:
             connection-timeout: 30000

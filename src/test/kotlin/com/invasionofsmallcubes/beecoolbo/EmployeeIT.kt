@@ -1,7 +1,6 @@
 package com.invasionofsmallcubes.beecoolbo
 
 import org.amshove.kluent.`should equal to`
-import org.amshove.kluent.shouldNotEqual
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired

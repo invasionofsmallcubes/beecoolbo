@@ -6,3 +6,5 @@ target
 .idea
 beecool-bo.iml
 .env
+node_modules/
+src/main/resources/static/built
