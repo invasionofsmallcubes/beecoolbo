@@ -18,6 +18,7 @@ class WebSecurityConfig @Autowired constructor(val properties: BeecoolEnv) : Web
                 .and()
                 .formLogin()
                 .loginPage("/login")
+                .defaultSuccessUrl("/")
                 .permitAll()
                 .and()
                 .logout()
@@ -32,4 +33,5 @@ class WebSecurityConfig @Autowired constructor(val properties: BeecoolEnv) : Web
                 .password(properties.password)
                 .roles("USER")
     }
+
 }
