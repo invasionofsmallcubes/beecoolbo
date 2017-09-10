@@ -10,5 +10,4 @@ class HomeController {
     fun index(): String {
         return "index"
     }
-
 }
