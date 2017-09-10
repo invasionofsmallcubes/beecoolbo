@@ -11,3 +11,6 @@ spring:
         password: ''
         url: jdbc:h2:~/beecoolbo;DATABASE_TO_UPPER=false;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS BEECOOLBO
         username: sa
+becoolbo:
+  admin: userp
+  password: passwordp

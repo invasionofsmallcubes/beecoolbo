@@ -14,3 +14,6 @@ spring:
             connection-timeout: 30000
             maximum-pool-size: 10
         url: ${JDBC_DATABASE_URL:}
+becoolbo:
+  admin: ${ADMIN_USERNAME:}
+  password: ${ADMIN_PASSWORD:}

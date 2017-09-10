@@ -10,4 +10,8 @@ class HomeController {
     fun index(): String {
         return "index"
     }
+    @RequestMapping(value = "/login")
+    fun login(): String {
+        return "login"
+    }
 }
