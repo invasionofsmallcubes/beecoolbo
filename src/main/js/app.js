@@ -5,7 +5,7 @@ const ReactDOM = require('react-dom');
 import { PostList, PostEdit, PostCreate } from './employees';
 
 const App = () => (
-    <Admin restClient={jsonServerRestClient('http://localhost:5000/api')}>
+    <Admin restClient={jsonServerRestClient('https://beecoolbo.herokuapp.com/api')}>
         <Resource name="employees" list={PostList} edit={PostEdit} create={PostCreate} />
         // ...
     </Admin>
