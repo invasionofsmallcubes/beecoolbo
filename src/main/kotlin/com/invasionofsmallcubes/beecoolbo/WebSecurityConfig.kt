@@ -13,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 class WebSecurityConfig @Autowired constructor(val properties: BeecoolEnv) : WebSecurityConfigurerAdapter() {
     override fun configure(http: HttpSecurity) {
         http
+                .csrf().disable()
                 .authorizeRequests()
                 .anyRequest().authenticated()
                 .and()
